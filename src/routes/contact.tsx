@@ -15,7 +15,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:description", content: "WhatsApp +27 65 930 4984 or visit our Sandton workshop." },
     ],
   }),
-  component: Contact;
+  component: Contact,
 });
 
 function Contact() {
