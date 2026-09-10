@@ -8,6 +8,7 @@ export const PHONE_DISPLAY = "+27 65 930 4984";
 const nav = [
   { to: "/", label: "Home" },
   { to: "/collections", label: "Collections" },
+  { to: "/projects", label: "Projects" },
   { to: "/about", label: "About" },
   { to: "/vacancies", label: "Vacancies" },
   { to: "/contact", label: "Contact" },
