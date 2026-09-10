@@ -8,8 +8,8 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 export default defineConfig({
   plugins: [
     TanStackRouterVite(),
-    tailwindcss(),
     react(),
+    tailwindcss(),
     tsConfigPaths(),
     tanstackStart({ server: { entry: "server" } }),
   ],
