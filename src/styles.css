@@ -19,6 +19,9 @@
  */
 
 @theme inline {
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-accent: "Italiana", Georgia, serif;
+  --font-sans: "Jost", ui-sans-serif, system-ui, sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -141,4 +144,107 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
   }
+}
+
+/* Brand palette: ivory, ink, warm taupe */
+:root {
+  --radius: 0.125rem;
+  --background: oklch(0.982 0.004 90);
+  --foreground: oklch(0.19 0.005 60);
+  --card: oklch(0.994 0.003 90);
+  --card-foreground: oklch(0.19 0.005 60);
+  --popover: oklch(0.994 0.003 90);
+  --popover-foreground: oklch(0.19 0.005 60);
+  --primary: oklch(0.19 0.005 60);
+  --primary-foreground: oklch(0.982 0.004 90);
+  --secondary: oklch(0.955 0.008 85);
+  --secondary-foreground: oklch(0.19 0.005 60);
+  --muted: oklch(0.955 0.008 85);
+  --muted-foreground: oklch(0.47 0.012 70);
+  --accent: oklch(0.86 0.024 75);
+  --accent-foreground: oklch(0.19 0.005 60);
+  --border: oklch(0.885 0.01 80);
+  --input: oklch(0.885 0.01 80);
+  --ring: oklch(0.47 0.012 70);
+  --veil-soft: oklch(0.982 0.004 90 / 0.05);
+  --veil-strong: oklch(0.982 0.004 90 / 0.94);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 300;
+}
+
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+@utility btn-ink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 2rem;
+  background: var(--foreground);
+  color: var(--background);
+  font-family: var(--font-accent);
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  transition: opacity 0.25s ease;
+  &:hover {
+    opacity: 0.82;
+  }
+}
+
+@utility btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 2rem;
+  border: 1px solid var(--foreground);
+  color: var(--foreground);
+  font-family: var(--font-accent);
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+  &:hover {
+    background: var(--foreground);
+    color: var(--background);
+  }
+}
+
+@utility field {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: transparent;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  outline: none;
+  &:focus {
+    border-color: var(--foreground);
+  }
+}
+
+@utility field-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-accent);
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+/* Globally hide the Lovable badge */
+#lovable-badge {
+  display: none !important;
 }
