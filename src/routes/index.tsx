@@ -3,7 +3,7 @@ import { Header, Footer, WHATSAPP } from "@/components/site-chrome";
 import lounge from "@/assets/lounge-sheers.jpg.asset.json";
 import install from "@/assets/installation.jpg.asset.json";
 import projectVideo from "@/assets/project-1.mp4.asset.json";
-import projectStill from "@/assets/project-3.mp4.asset.json";
+import projectVideo2 from "@/assets/project-2.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -111,6 +111,54 @@ function Home() {
                 Start your quote
               </Link>
             </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 py-24">
+          <div className="text-center">
+            <p className="font-accent text-xs uppercase tracking-[0.4em] text-muted-foreground">Featured work</p>
+            <h2 className="mt-4 font-display text-4xl md:text-5xl">Recent projects</h2>
+          </div>
+          <div className="mt-14 grid gap-8 md:grid-cols-2">
+            <figure className="group relative overflow-hidden bg-foreground/5">
+              <video
+                src={projectVideo.url}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                className="h-[62vh] w-full object-cover"
+              />
+              <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-[linear-gradient(to_top,rgba(20,18,16,0.82),transparent)] px-7 pb-8 pt-24 text-left">
+                <h3 className="font-script text-3xl text-[oklch(0.99_0.004_90)] md:text-4xl">Wave-fold sheers</h3>
+                <p className="mt-2 max-w-md text-sm leading-relaxed text-[oklch(0.93_0.006_85)]">
+                  Ceiling-recessed track with soft wave folds, stacking neatly clear of the glass.
+                </p>
+              </figcaption>
+            </figure>
+            <figure className="group relative overflow-hidden bg-foreground/5">
+              <video
+                src={projectVideo2.url}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                className="h-[62vh] w-full object-cover"
+              />
+              <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-[linear-gradient(to_top,rgba(20,18,16,0.82),transparent)] px-7 pb-8 pt-24 text-left">
+                <h3 className="font-script text-3xl text-[oklch(0.99_0.004_90)] md:text-4xl">Full-height install</h3>
+                <p className="mt-2 max-w-md text-sm leading-relaxed text-[oklch(0.93_0.006_85)]">
+                  Floor-to-ceiling drapery hung level across a wide patio opening.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="mt-14 text-center">
+            <Link to="/projects" className="btn-ink">
+              View more
+            </Link>
           </div>
         </section>
 
