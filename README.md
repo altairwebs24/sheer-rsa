@@ -1,14 +1,16 @@
-# Welcome to your Lovable project
+# Sheer RSA
+
+Create a fully functional 5 page website for this company. It should be luxurious with a mix of luxury fonts. With the first image being the logo and the second image being a vacancy which I want you to add a page for vacancies, then the last 3 images I need you to only extract information from them don't put the images into the website. Lastly Add to the CSS to globally hide anything with the ID lovable-badge.
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/39643421-1a32-40c9-bc73-345a89bbcacb).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +22,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
