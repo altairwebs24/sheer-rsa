@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header, Footer, WHATSAPP } from "@/components/site-chrome";
 import lounge from "@/assets/lounge-sheers.jpg.asset.json";
 import install from "@/assets/installation.jpg.asset.json";
+import projectVideo from "@/assets/project-1.mp4.asset.json";
+import projectStill from "@/assets/project-3.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
