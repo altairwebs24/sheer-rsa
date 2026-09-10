@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import logo from "@/assets/sheer-logo.png.asset.json";
+const logo = { url: "/media/sheer-logo.png" };
 
 export const WHATSAPP = "https://wa.me/27659304984";
 export const PHONE_DISPLAY = "+27 65 930 4984";
