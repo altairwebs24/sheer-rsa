@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header, Footer, WHATSAPP } from "@/components/site-chrome";
-import lounge from "@/assets/lounge-sheers.jpg.asset.json";
-import install from "@/assets/installation.jpg.asset.json";
-import projectVideo from "@/assets/project-1.mp4.asset.json";
-import projectVideo2 from "@/assets/project-2.mp4.asset.json";
+const lounge = { url: "/media/lounge-sheers.jpg" };
+const install = { url: "/media/installation.jpg" };
+const projectVideo = { url: "/media/project-1.mp4" };
+const projectVideo2 = { url: "/media/project-2.mp4" };
 
 export const Route = createFileRoute("/")({
   head: () => ({

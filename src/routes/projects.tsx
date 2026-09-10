@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header, Footer, PageHero } from "@/components/site-chrome";
-import v1 from "@/assets/project-1.mp4.asset.json";
-import v2 from "@/assets/project-2.mp4.asset.json";
-import v3 from "@/assets/project-3.mp4.asset.json";
-import lounge from "@/assets/lounge-sheers.jpg.asset.json";
-import install from "@/assets/installation.jpg.asset.json";
+const v1 = { url: "/media/project-1.mp4" };
+const v2 = { url: "/media/project-2.mp4" };
+const v3 = { url: "/media/project-3.mp4" };
+const lounge = { url: "/media/lounge-sheers.jpg" };
+const install = { url: "/media/installation.jpg" };
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
